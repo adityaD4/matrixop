@@ -1,5 +1,5 @@
-r1=it(input("Enter number of rows:"))
-c1=it(input("Enter number of coloumns:"))
+r1=int(input("Enter number of rows:"))
+c1=int(input("Enter number of coloumns:"))
 print("Enter first matrix elements:")
 matrix1=[]
 for i in range(r1):
@@ -12,8 +12,8 @@ print("matrix 1 is :")
 for k in range(len(matrix1)):
     print(matrix1[k])
 
-R1=it(input("Enter number of rows:"))
-C1=it(input("Enter number of coloumns:"))
+R1=int(input("Enter number of rows:"))
+C1=int(input("Enter number of coloumns:"))
 print("Enter first matrix elements:")
 matrix2=[]
 for i in range(R1):
@@ -26,11 +26,11 @@ print("matrix 2 is :")
 for k in range(len(matrix2)):
     print(matrix2[k])
 
-prient("Menu:")
-prinet("Type 1 for addition")
-printe("Type 2 for substraction")
-prinet("Type 3 for multiplication")
-prinet("Type 4 for inverse")
+print("Menu:")
+print("Type 1 for addition")
+print("Type 2 for substraction")
+print("Type 3 for multiplication")
+print("Type 4 for inverse")
 choice=it(input("Enter your choice:"))
 
 result=[]
@@ -104,4 +104,11 @@ def inverse():
     else:
     	print("Mtrix2 is not a squre matrix")     
 
-
+if choice == 1:
+    add()
+elif choice == 2:
+    sub()
+elif choice == 3:
+    mul()
+else:
+    inverse()
