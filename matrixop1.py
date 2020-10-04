@@ -12,8 +12,8 @@ print("matrix 1 is :")
 for k in range(len(matrix1)):
     print(matrix1[k])
 
-R1=int(input("Enter number of rows:"))
-C1=int(input("Enter number of coloumns:"))
+R1=it(input("Enter number of rows:"))
+C1=it(input("Enter number of coloumns:"))
 print("Enter first matrix elements:")
 matrix2=[]
 for i in range(R1):
